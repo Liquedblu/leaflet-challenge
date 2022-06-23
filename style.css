@@ -7,27 +7,25 @@ html {
   margin: 0;
 }
 
-.leaflet-popup-content {
-  text-align: left;
+.legend ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+.legend .max {
+  float: right;
 }
 
-table{
-  font-size: 9pt;
+h1 {
   text-align: center;
-}
-
-#tr-title{
-  text-align: justify;
-}
-
-td:nth-child(2) + td { text-align: justify; }
-
-.jumbotron {
-  padding: 30px;
-  margin-bottom: 10px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  color: white;
-  background-color: #1490e9;
 }
