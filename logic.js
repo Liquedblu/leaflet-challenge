@@ -1,8 +1,9 @@
 
-// Earthquakes & Tectonic Plates GeoJSON URL Variables
-var earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
-var platesURL = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
-
+// Store our API endpoint as queryUrl
+// My chosen API is: all earthquakes in the last 7 days
+let queryUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
+// Adding "Level 2: More Data" - the tectonic plates data from GitHub
+let platesURL = 'https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json'
 
 // Perform a GET request to the query URL
 d3.json(queryUrl).then(function (data) {
